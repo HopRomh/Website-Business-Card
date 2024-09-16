@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#background-container {
+    position: fixed;
+    top: 0;
+    left: -10px;
+    width: 110%;
+    height: 100%;
+    background-image: url('Cover3.png'); /* Замените на путь к вашему изображению */
+    background-size: cover;
+    background-position: left center;
+    overflow: hidden; 
+}
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+#content-container {
+    position: relative;
+}
+
+
+
+#white-square {
+    width: 600px; /* Замените на желаемую ширину */
+    height: 650px; /* Замените на желаемую высоту */
+    background-color: white;
+    border-radius: 10px; /* Радиус закругления углов */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.top-half {
+    height: 50%;
+    overflow: hidden;
+}
+
+.top-half img {
+    width: 100%; /* Растягиваем изображение на всю ширину верхней части */
+    height: 200%;
+    object-fit: cover; /* Сохраняем пропорции изображения */
+    
+}
+
+.bottom-half {
+    height: 50%;
+    background-color: white; /* Белая нижняя часть */
+}
+.highlighted-border {
+    border: 2px solid #f7fcff; /* Цвет границы */
+    padding: 0px;
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 0 10px rgba(207, 226, 252, 0.747); /* Тень */
+    background-color: #d6e5f3e8; /* Цвет фона */
+    width: 570px; 
+    height: 620px;
+    z-index: 0;
+    filter: blur(70px);
+}
+#texttipe {
+    
+    z-index: 3;
+    position: absolute;
+    color: #5c7487;
+    font-size: 27px;
+    margin-top: 1.4%;
+    letter-spacing: 0.28rem;
+    text-align: center;
+    margin-left: -360px;
+    
+}
+
+.font-example{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;                                 1 */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font-example2{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;                                 1 */
+    font-family:'Calibri Light', Calibri, sans-serif;
+}
+.Textheight{
+    line-height: 250%;
+    font-weight: 550;
+}
+.GRAPHIC{
+    position: absolute;
+    z-index: 3;
+    font-size: 7px;
+    color: #5c7487;
+    margin-top: 3.4%;
+    letter-spacing: 0.38rem;
+    font-weight: lighter;
+    line-height: 250%;
+    left: 761px;
+    
+}
+
+
+.social-icons {
+    display: flex;
+    position: absolute;
+    z-index: 3; 
+    margin-top: 270px; 
+    margin-right: -76px;
+    
+}
+
+
+
+.icon {
+    width: 23px;
+    height: 23px;
+    background-size: contain; /* Это свойство позволяет изображению уменьшаться до тех пор, пока оно полностью не вместится в контейнер */
+    background-repeat: no-repeat;
+    padding-right: 60px;
+    z-index: 4;
+    display: block;
+    transition: transform 0.5s ease; 
+    transform-origin: center center;
+    
+    
+}
+
+.instagram {
+    background-image: url('instagram1.png'); 
+}
+
+.youtube {
+    background-image: url('youtube1.png'); 
+}
+
+.artstation {
+    background-image: url('artstation1.png'); 
+}
+
+.telegram {
+    background-image: url('telegram1.png'); 
+}
+.icon:hover {
+    transform: scale(1.2);
+}
+
+
+#batton{
+    position: absolute;
+    z-index: 3;
+    border: 1px solid #5c74876b;
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    bottom: -130px;
+    left: -95px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    
+    
+}
+#batton:hover{
+    transform: translate(1px, 1px) scale(1.06);
+    opacity: 0.6; /* Прозрачность элемента */
+}
+#textbatton{
+    color: #5c7487;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-size: 22px;
+    line-height: 0px;
+    
+    padding: 1px 10px 10px 5px;
+    
+    margin-bottom: 20px;
+
+    
+}
+.a {
+    color: #0d6efd;
+    
+}
+#textbatton p {
+    font-weight: bold;
+}
+
+
+
+
+#batton2{
+    position: absolute;
+    z-index: 3;
+    border: 1px solid #5c74876b;
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    bottom: -130px;
+    left: 145px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+#batton2:hover{
+    transform: translate(1px, 1px) scale(1.06);
+    opacity: 0.6; /* Прозрачность элемента */
+}
+#textbatton2{
+    color: #5c7487;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-size: 22px;
+    line-height: 0px;
+    
+    padding: 1px 10px 10px 5px;
+    
+    margin-bottom: 20px;
+
+    
+}
+.a {
+    color: #0d6efd;
+    
+}
+#textbatton2 p {
+    font-weight: bold;
+}
+
+
+#RU{
+    color: #5c7487;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-size: 12px;
+    line-height: 0px;
+    opacity: 0.6; /* Прозрачность элемента */
+    padding: 0px -20px -20px 0px;
+    text-align: right; /* Выравниваем текст по правому краю */
+    margin-right: 10px;
+
+
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#EN{
+    color: #5c7487;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-size: 12px;
+    line-height: 0px;
+    opacity: 0.6; /* Прозрачность элемента */
+    padding: 0px -20px -20px 0px;
+    text-align: right; /* Выравниваем текст по правому краю */
+    margin-right: 10px;
+
+
+    font-weight: bold;
+    margin-bottom: 10px;
+}
